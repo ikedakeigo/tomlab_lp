@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TomoLab</title>
+
+    <!-- drawer -->
+    <!-- drawer.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+      media="screen and (max-width: 767px)"
+    />
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <!-- wow -->
+    <script src="/js/wow.min.js"></script>
+    <link rel="stylesheet" href="/css/animate.css" />
+    <!-- original -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../bootstrap-5.0/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      type="text/javascript"
+      src="../bootstrap-5.0/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </head>
+  <body class="drawer drawer--right">
+    <header class="header">
+      <div class="header-inner inner">
+        <h1 class="header-logo">
+          <img src="/img/logox.png" alt="" />メインタイトル
+        </h1>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav header-nav">
+          <ul class="drawer-menu header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="../index.html#newcar"
+                >NewCar</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="../index.html#nextcars"
+                >NextCars</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="../index.html#works"
+                >Works</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="../index.html#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-item-link" href="#">Sell</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ./header -->
+
+    <main class="main">
+      <section id="sellContact" class="sellContact section-sellContact">
+        <h2 class="util-title">お車を売りたい方</h2>
+
+        <div class="sellContact-inner">
+          <div class="sellContact-content">
+            <form action="" method="post" id="js-sellContactForm">
+              <dl class="sellContact-list">
+                <div class="sellContact-item">
+                  <dt class="sellContact-itemTtl">お問い合わせ種別</dt>
+                  <dd class="sellContact-selectBox">
+                    <select name="form-select" id="form-select">
+                      <option value="-" selected>選択してください</option>
+                      <option value="B">軽自動種</option>
+                      <option value="A">普通自動車</option>
+                      <option value="B">自動二輪</option>
+                    </select>
+                  </dd>
+                </div>
+                <div class="sellContact-item">
+                  <dt class="sellContact-itemTtl">
+                    氏名<span class="sellContact-requireLabel">必須</span>
+                  </dt>
+                  <dd class="sellContact-inputBox">
+                    <input
+                      class="js-require"
+                      type="text"
+                      name="name"
+                      placeholder="氏名"
+                    />
+                    <span class="sellContact-focusLine"></span>
+                  </dd>
+                </div>
+                <div class="sellContact-item">
+                  <dt class="sellContact-itemTtl">
+                    メールアドレス<span class="sellContact-requireLabel"
+                      >必須</span
+                    >
+                  </dt>
+                  <dd class="sellContact-inputBox">
+                    <input
+                      class="js-require"
+                      type="email"
+                      name="email"
+                      id="form-email"
+                      placeholder="sample@gmail.com"
+                    />
+                    <span class="sellContact-focusLine"></span>
+                  </dd>
+                </div>
+                <!-- <div class="sellContact-item sellContact-item--radio">
+                  <dt class="sellContact-itemTtl">性別</dt>
+                  <dd class="sellContact-inputBox">
+                    <div class="sellContact-radio">
+                      <input
+                        type="radio"
+                        value="male"
+                        name="sex"
+                        id="radio-male"
+                        checked
+                      />
+                      <label for="radio-male" class="sellContact-radioLabel"
+                        >男性</label
+                      >
+                    </div>
+                    <div class="sellContact-radio">
+                      <input
+                        type="radio"
+                        value="female"
+                        name="sex"
+                        id="radio-female"
+                      />
+                      <label for="radio-female" class="sellContact-radioLabel"
+                        >女性</label
+                      >
+                    </div>
+                  </dd>
+                </div> -->
+                <div
+                  class="sellContact-item sellContact-item--message mod-message"
+                >
+                  <dt class="sellContact-itemTtl">メッセージ</dt>
+                  <dd>
+                    <textarea name="message"></textarea>
+                  </dd>
+                </div>
+              </dl>
+              <div class="sellContact-center">
+                <div class="sellContact-privacy">
+                  <input type="checkbox" name="privacy" id="form-privacy" />
+                  <label for="form-privacy" class="sellContact-privacyLabel">
+                    個人情報保護方針に同意する
+                  </label>
+                </div>
+                <button id="form-submit" class="sellContact-button">
+                  送信する
+                </button>
+              </div>
+              <!-- / -->
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- /.contact -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo"><img src="" alt="" />logo</div>
+      <!-- /.footer-logo -->
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a href="" class="footer-nav__item-link">プライバシーポリシー</a>
+          <!-- /.footer-nav__item-link -->
+        </li>
+        <!-- /.footer-nav__item -->
+        <li class="footer-nav__item">
+          <a href="" class="footer-nav__item-link">特定商取引法に基づく表記</a>
+          <!-- /.footer-nav__item-link -->
+        </li>
+        <!-- /.footer-nav__item -->
+      </ul>
+      <!-- /.footer-nav__list -->
+
+      <ul class="footer-sns__list">
+        <li class="footer-sns-item">
+          <a href="#" class="footer-sns-item-link" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li class="footer-sns-item">
+          <a href="#" class="footer-sns-item-link" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="footer-sns-item">
+          <a href="#" class="footer-sns-item-link" aria-label="line"
+            ><i class="fa-brands fa-line"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- /.footer-sns__list -->
+      <p class="footer-copy-right">
+        <small lang="en">© 2022 tomolab All rights reserved</small>
+      </p>
+    </footer>
+    <!-- /.footer -->
+  </body>
+</html>
