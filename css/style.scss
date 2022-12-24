@@ -595,6 +595,12 @@ img{
 .section-05__movie-wrapper{
 	text-align: center;
 }
+.movieFlex{
+	display: flex;
+	@include mq(sm) {
+		display: block;
+	}
+}
 .movieBox{
 	margin: 0 30px;
 }

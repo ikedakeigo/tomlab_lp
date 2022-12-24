@@ -545,6 +545,15 @@ img {
   text-align: center;
 }
 
+.movieFlex {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .movieFlex {
+    display: block;
+  }
+}
+
 .movieBox {
   margin: 0 30px;
 }
