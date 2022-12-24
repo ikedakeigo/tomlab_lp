@@ -66,6 +66,7 @@ img {
   border: none;
   font-weight: normal;
   color: #333;
+  margin-bottom: 30px;
 }
 .center-line::before {
   border-top: 1px solid;
@@ -103,6 +104,7 @@ img {
 .center-line__white {
   text-align: center;
   display: flex;
+  margin-bottom: 30px;
 }
 .center-line__white::before, .center-line__white::after {
   flex: 1;
@@ -143,6 +145,25 @@ img {
   .center-line__white span {
     font-size: 30px;
   }
+}
+
+h3 small {
+  color: #999;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 20px;
+}
+
+h2 small {
+  color: #999;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  display: block;
+  font-size: 20px;
+}
+
+.Grid small {
+  color: #999;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 12px;
 }
 
 /*===================================
@@ -189,6 +210,60 @@ img {
   height: 100%;
   text-align: center;
   line-height: 0;
+}
+
+/*===================================
+# ボタン　オレンジ
+===================================*/
+a.btn--orange {
+  color: #fff;
+  background-color: #FF0000;
+}
+
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  border-radius: 20px;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
+
+a.btn-c:before {
+  font-size: 1.6rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: "→";
+}
+
+.tomYouBtn {
+  margin-top: 50px;
+}
+
+a.sellBtn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+a.sellBtn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.sellBtn-c {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 100vh;
 }
 
 /*===================================
@@ -271,33 +346,38 @@ img {
 @media screen and (max-width: 767px) {
   .header-nav-list {
     display: block;
+    padding: 30px 10px;
   }
 }
 
 .header-nav-item-link {
+  text-decoration: none;
   display: block;
-  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
   height: 50px;
-  width: 65px;
+  width: 100%;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 767px) {
   .header-nav-item-link {
-    height: 65px;
+    font-size: 17px;
+    color: #000;
   }
 }
 
 .header-nav-item + .header-nav-item {
-  margin-left: 120px;
+  margin-left: 100px;
 }
 @media screen and (max-width: 767px) {
   .header-nav-item + .header-nav-item {
-    margin-left: 100px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 767px) {
   .header-nav-item {
-    margin-left: 100px;
+    margin-left: 0px;
   }
 }
 
@@ -318,7 +398,7 @@ img {
 ===================================*/
 .mainvisual-inner {
   height: 42.846vw;
-  background: url(/img/car_01.jpeg) center center/cover no-repeat;
+  background: url(/img/tomlab_mv.png) center center/cover no-repeat;
   position: relative;
 }
 
@@ -547,6 +627,7 @@ img {
 
 .movieFlex {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
   .movieFlex {
@@ -555,7 +636,7 @@ img {
 }
 
 .movieBox {
-  margin: 0 30px;
+  margin: 10px 30px;
 }
 
 /*===================================
@@ -686,6 +767,25 @@ img {
   .section-08__item {
     width: 90%;
   }
+}
+
+.section-08__item-color {
+  position: relative;
+  text-align: center;
+}
+
+.section-08__item-souldout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  left: 0;
+  padding: 36px;
+  background: rgba(32, 34, 34, 0.5);
+  color: #fff;
+  z-index: 1;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 .section-08__info {
@@ -1548,4 +1648,4 @@ input[type=checkbox]:checked + .sellContact-privacyLabel:after {
 }
 .sellContact-radioLabel .sellContact-center {
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
