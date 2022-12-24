@@ -416,6 +416,10 @@ a.sellBtn-c {
 	@include mq(sm) {
 		margin-left: 0px;
 	}
+
+	&:last-child{
+		margin-top: -10px;
+	}
 }
 
 /*===================================

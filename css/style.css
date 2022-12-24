@@ -380,6 +380,9 @@ a.sellBtn-c {
     margin-left: 0px;
   }
 }
+.header-nav-item:last-child {
+  margin-top: -10px;
+}
 
 /*===================================
 # main
